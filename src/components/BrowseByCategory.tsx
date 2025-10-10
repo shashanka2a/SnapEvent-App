@@ -8,22 +8,22 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const categories = [
   {
     title: 'Weddings',
-    image: 'https://images.unsplash.com/photo-1627913759066-2f62eb9bbaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcGhvdG9ncmFwaHklMjBjZXJlbW9ueXxlbnwxfHx8fDE3NjAwOTIxOTB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=1600&auto=format&fit=crop',
     description: 'Capture your special day',
   },
   {
     title: 'Corporate',
-    image: 'https://images.unsplash.com/photo-1664042346301-687bcdfcdfa7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBidXNpbmVzcyUyMHBob3RvZ3JhcGh5fGVufDF8fHx8MTc2MDA5MjE5MXww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop',
     description: 'Professional business events',
   },
   {
     title: 'Portraits',
-    image: 'https://images.unsplash.com/photo-1612052355380-d7c1d631f00f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHBob3RvZ3JhcGh5JTIwc3R1ZGlvfGVufDF8fHx8MTc2MDA4MjcwNnww&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1600&auto=format&fit=crop',
     description: 'Personal & family portraits',
   },
   {
     title: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1679962318280-84ba9cd4f1ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaWZlc3R5bGUlMjBwaG90b2dyYXBoeSUyMG91dGRvb3J8ZW58MXx8fHwxNzYwMDkyMTkxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop',
     description: 'Candid moments & stories',
   },
 ];
@@ -58,10 +58,12 @@ export function BrowseByCategory() {
           {categories.map((category, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer"
+              whileHover={{ y: -6 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.4, delay: index * 0.08, ease: 'easeOut' }}
+              className="group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer shadow-md hover:shadow-2xl transition-shadow"
             >
               {/* Image */}
               <ImageWithFallback
@@ -70,8 +72,9 @@ export function BrowseByCategory() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
-              {/* Gradient Overlay */}
+              {/* Gradient Overlay + Shine */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="pointer-events-none absolute -top-4 -left-4 w-1/2 h-full rotate-12 bg-white/10 translate-x-[-120%] group-hover:translate-x-[180%] transition-transform duration-700" />
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">

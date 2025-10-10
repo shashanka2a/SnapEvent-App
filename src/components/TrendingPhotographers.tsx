@@ -15,7 +15,7 @@ const photographers = [
     reviews: 127,
     startingPrice: '₹85,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1617970276665-82eb95d8b9e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwaG90b2dyYXBoZXIlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzYwMDkyMTkyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Arjun Mehta',
@@ -25,7 +25,7 @@ const photographers = [
     reviews: 203,
     startingPrice: '₹95,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1643968612613-fd411aecd1fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwaG90b2dyYXBoZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjAwODAzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Ananya Reddy',
@@ -35,7 +35,7 @@ const photographers = [
     reviews: 156,
     startingPrice: '₹75,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1617970276665-82eb95d8b9e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBwaG90b2dyYXBoZXIlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzYwMDkyMTkyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Vikram Singh',
@@ -45,7 +45,7 @@ const photographers = [
     reviews: 189,
     startingPrice: '₹80,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1643968612613-fd411aecd1fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwaG90b2dyYXBoZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjAwODAzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=1600&auto=format&fit=crop',
   },
 ];
 
@@ -87,8 +87,10 @@ export function TrendingPhotographers() {
                 key={index}
                 initial={{ opacity: 0, x: 50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="w-80 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl rounded-3xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer"
+                whileHover={{ y: -6 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.45, delay: index * 0.08, ease: 'easeOut' }}
+                className="w-80 bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl rounded-3xl overflow-hidden border border-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer shadow-md hover:shadow-2xl"
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -97,6 +99,7 @@ export function TrendingPhotographers() {
                     alt={photographer.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   {photographer.verified && (
                     <Badge className="absolute top-4 right-4 bg-blue-500/90 backdrop-blur-sm border-0 flex items-center gap-1">
                       <CheckCircle className="w-3 h-3" />
