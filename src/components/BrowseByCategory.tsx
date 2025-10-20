@@ -8,22 +8,22 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const categories = [
   {
     title: 'Weddings',
-    image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1600&auto=format&fit=crop',
     description: 'Capture your special day',
   },
   {
     title: 'Corporate',
-    image: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop',
     description: 'Professional business events',
   },
   {
     title: 'Portraits',
-    image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop',
     description: 'Personal & family portraits',
   },
   {
     title: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=1600&auto=format&fit=crop',
     description: 'Candid moments & stories',
   },
 ];
