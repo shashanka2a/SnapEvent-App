@@ -15,7 +15,7 @@ const photographers = [
     reviews: 127,
     startingPrice: '₹85,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Arjun Mehta',

@@ -23,7 +23,7 @@ const categories = [
   },
   {
     title: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1600&auto=format&fit=crop',
     description: 'Candid moments & stories',
   },
 ];
