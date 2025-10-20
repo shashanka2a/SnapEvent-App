@@ -8,7 +8,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 const categories = [
   {
     title: 'Weddings',
-    image: 'https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1600&auto=format&fit=crop',
     description: 'Capture your special day',
   },
   {
@@ -23,7 +23,7 @@ const categories = [
   },
   {
     title: 'Lifestyle',
-    image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1600&auto=format&fit=crop',
     description: 'Candid moments & stories',
   },
 ];

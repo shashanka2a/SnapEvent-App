@@ -15,7 +15,7 @@ const photographers = [
     reviews: 127,
     startingPrice: '₹85,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1542452255191-c85a98f2c5da?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Arjun Mehta',
@@ -25,7 +25,7 @@ const photographers = [
     reviews: 203,
     startingPrice: '₹95,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Ananya Reddy',
@@ -35,7 +35,7 @@ const photographers = [
     reviews: 156,
     startingPrice: '₹75,000',
     verified: true,
-    image: 'https://images.unsplash.com/photo-1535905748047-14b1052f9f22?q=80&w=1600&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1600&auto=format&fit=crop',
   },
   {
     name: 'Vikram Singh',
