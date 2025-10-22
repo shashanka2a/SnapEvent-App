@@ -1,5 +1,5 @@
 "use client";
-import { Camera, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const footerLinks = {
   snapEvent: {
@@ -32,7 +32,13 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <Camera className="w-6 h-6 text-[#6B5BFF]" />
+              <svg className="w-6 h-6 text-[#6B5BFF]" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="6" width="16" height="12" rx="2" fill="currentColor"/>
+                <rect x="2" y="8" width="3" height="1" rx="0.5" fill="currentColor"/>
+                <circle cx="12" cy="12" r="4" fill="currentColor"/>
+                <circle cx="12" cy="12" r="2.5" fill="#9CA3AF"/>
+                <circle cx="12" cy="12" r="1.5" fill="#374151"/>
+              </svg>
               <span className="text-white">SnapEvent</span>
             </div>
             <p className="text-gray-400 mb-6">
