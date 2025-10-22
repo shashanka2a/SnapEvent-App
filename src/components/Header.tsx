@@ -14,7 +14,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
               <div className="flex items-center gap-2">
-                <img src="/favicon.svg" alt="SnapEvent" className="w-8 h-8" />
+                <img src="/image.png" alt="SnapEvent" className="w-8 h-8" />
                 <span className="text-white relative">
                   SnapEvent
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
