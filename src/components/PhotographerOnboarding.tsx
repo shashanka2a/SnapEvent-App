@@ -96,13 +96,13 @@ export function PhotographerOnboarding() {
     <div className="min-h-screen bg-[#0A0A0F] flex items-center justify-center p-6 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] rounded-full blur-3xl animate-pulse-glow" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full blur-3xl animate-pulse-glow" />
       </div>
 
       {/* Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-white/10 z-50">
         <motion.div
-          className="h-full bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3]"
+          className="h-full bg-gradient-to-r from-gray-600 to-gray-800"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.3 }}
@@ -127,14 +127,14 @@ export function PhotographerOnboarding() {
               transition={{ duration: 0.4 }}
               className="text-center"
             >
-              <Camera className="w-16 h-16 text-[#6B5BFF] mx-auto mb-6" />
+              <Camera className="w-16 h-16 text-white mx-auto mb-6" />
               <h1 className="text-white mb-4">SnapEvent – Photographer Onboarding</h1>
               <p className="text-xl text-gray-300 mb-8">
                 SnapEvent is a new platform to help photographers get more visibility, clients, and bookings.
               </p>
               <Button
                 onClick={nextStep}
-                className="bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] hover:opacity-90 px-8 py-6 rounded-2xl"
+                className="bg-gradient-to-r from-gray-600 to-gray-800 hover:opacity-90 px-8 py-6 rounded-2xl"
               >
                 Get Started
                 <ChevronRight className="ml-2 w-5 h-5" />
@@ -341,7 +341,7 @@ export function PhotographerOnboarding() {
                           id={type.id}
                           checked={formData.photoTypes.includes(type.id)}
                           onCheckedChange={() => handleCheckboxChange('photoTypes', type.id)}
-                          className="border-white/20 data-[state=checked]:bg-[#6B5BFF] data-[state=checked]:border-[#6B5BFF]"
+                          className="border-white/20 data-[state=checked]:bg-white data-[state=checked]:border-white"
                         />
                         <Label htmlFor={type.id} className="text-white cursor-pointer">
                           {type.label}
@@ -361,7 +361,7 @@ export function PhotographerOnboarding() {
                           id={service.id}
                           checked={formData.additionalServices.includes(service.id)}
                           onCheckedChange={() => handleCheckboxChange('additionalServices', service.id)}
-                          className="border-white/20 data-[state=checked]:bg-[#6B5BFF] data-[state=checked]:border-[#6B5BFF]"
+                          className="border-white/20 data-[state=checked]:bg-white data-[state=checked]:border-white"
                         />
                         <Label htmlFor={service.id} className="text-white cursor-pointer">
                           {service.label}
@@ -380,7 +380,7 @@ export function PhotographerOnboarding() {
                           id={service.id}
                           checked={formData.hardwareServices.includes(service.id)}
                           onCheckedChange={() => handleCheckboxChange('hardwareServices', service.id)}
-                          className="border-white/20 data-[state=checked]:bg-[#6B5BFF] data-[state=checked]:border-[#6B5BFF]"
+                          className="border-white/20 data-[state=checked]:bg-white data-[state=checked]:border-white"
                         />
                         <Label htmlFor={service.id} className="text-white cursor-pointer">
                           {service.label}
@@ -457,7 +457,7 @@ export function PhotographerOnboarding() {
               transition={{ duration: 0.5 }}
               className="text-center"
             >
-              <div className="w-20 h-20 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Check className="w-10 h-10 text-white" />
               </div>
               <h2 className="text-white mb-4">Thank you! 🎉</h2>
@@ -469,7 +469,7 @@ export function PhotographerOnboarding() {
               </p>
               <p className="text-gray-400">
                 Follow us on Instagram:{' '}
-                <a href="#" className="text-[#6B5BFF] hover:underline">
+                <a href="#" className="text-white hover:underline">
                   @snapevent.in
                 </a>
               </p>

@@ -33,7 +33,7 @@ export function HowItWorks() {
     <section className="py-24 bg-[#0A0A0F] relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] rounded-full blur-3xl" />
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
@@ -62,13 +62,13 @@ export function HowItWorks() {
               >
                 <div className="bg-gradient-to-br from-white/5 to-white/[0.02] backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-white/20 transition-all duration-300 h-full">
                   {/* Number Badge */}
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-r from-gray-600 to-gray-800 rounded-2xl flex items-center justify-center shadow-lg">
                     <span className="text-white">{step.number}</span>
                   </div>
 
                   {/* Icon */}
-                  <div className="w-16 h-16 bg-gradient-to-r from-[#6B5BFF]/20 to-[#FF7EB3]/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-8 h-8 text-[#6B5BFF]" />
+                  <div className="w-16 h-16 bg-gradient-to-r from-gray-600/20 to-gray-800/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="w-8 h-8 text-white" />
                   </div>
 
                   {/* Content */}
@@ -76,7 +76,7 @@ export function HowItWorks() {
                   <p className="text-gray-400">{step.description}</p>
 
                   {/* Hover Gradient Effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#6B5BFF]/0 to-[#FF7EB3]/0 group-hover:from-[#6B5BFF]/5 group-hover:to-[#FF7EB3]/5 rounded-3xl transition-all duration-300 pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-gray-600/0 to-gray-800/0 group-hover:from-gray-600/5 group-hover:to-gray-800/5 rounded-3xl transition-all duration-300 pointer-events-none" />
                 </div>
               </motion.div>
             );

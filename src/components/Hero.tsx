@@ -9,8 +9,8 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A0A0F]">
       {/* Animated Overlay Effects */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-[#FF7EB3] to-[#6B5BFF] rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full blur-3xl animate-pulse-glow" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-gray-800 to-gray-600 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1.5s' }} />
       </div>
 
       {/* Camera Lens Shimmer Effect */}
@@ -36,7 +36,7 @@ export function Hero() {
           {/* Headline */}
           <h1 className="text-white mb-6">
             Capture Life's Best Moments with{' '}
-            <span className="bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               SnapEvent
             </span>
           </h1>
@@ -82,7 +82,7 @@ export function Hero() {
               </div>
 
               {/* CTA Button */}
-              <Button className="px-8 py-6 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] hover:opacity-90 transition-opacity rounded-2xl shadow-lg">
+              <Button className="px-8 py-6 bg-gradient-to-r from-gray-600 to-gray-800 hover:opacity-90 transition-opacity rounded-2xl shadow-lg">
                 Find Photographers
               </Button>
             </div>

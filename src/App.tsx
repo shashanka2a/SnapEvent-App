@@ -31,7 +31,7 @@ export default function App() {
       <div className="fixed bottom-6 right-6 z-50">
         <Button
           onClick={() => setShowOnboarding(true)}
-          className="bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] hover:opacity-90 shadow-2xl px-6 py-6 rounded-2xl"
+          className="bg-gradient-to-r from-gray-600 to-gray-800 hover:opacity-90 shadow-2xl px-6 py-6 rounded-2xl"
         >
           Join as Photographer
         </Button>

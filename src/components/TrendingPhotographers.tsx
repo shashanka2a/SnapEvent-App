@@ -57,7 +57,7 @@ export function TrendingPhotographers() {
     <section className="py-24 bg-[#0f0f17] relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-to-r from-[#FF7EB3] to-[#6B5BFF] rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
@@ -73,7 +73,7 @@ export function TrendingPhotographers() {
               Highly rated professionals ready to capture your moments
             </p>
           </div>
-          <button className="hidden md:flex items-center gap-2 text-[#6B5BFF] hover:gap-3 transition-all duration-300">
+          <button className="hidden md:flex items-center gap-2 text-white hover:gap-3 transition-all duration-300">
             View All
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -139,7 +139,7 @@ export function TrendingPhotographers() {
 
         {/* Mobile View All Button */}
         <div className="md:hidden mt-8 text-center">
-          <button className="inline-flex items-center gap-2 text-[#6B5BFF] hover:gap-3 transition-all duration-300">
+          <button className="inline-flex items-center gap-2 text-white hover:gap-3 transition-all duration-300">
             View All
             <ArrowRight className="w-5 h-5" />
           </button>

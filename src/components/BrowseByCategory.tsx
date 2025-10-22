@@ -33,7 +33,7 @@ export function BrowseByCategory() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 bg-gradient-to-b from-[#0A0A0F] to-[#0f0f17] relative">
+    <section className="py-24 bg-gradient-to-b from-[#0A0A0F] to-[#1a1a1a] relative">
       <div className="container mx-auto px-6" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ export function BrowseByCategory() {
               Discover photographers specialized in your type of event
             </p>
           </div>
-          <button className="hidden md:flex items-center gap-2 text-[#6B5BFF] hover:gap-3 transition-all duration-300">
+          <button className="hidden md:flex items-center gap-2 text-white hover:gap-3 transition-all duration-300">
             View All
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -85,14 +85,14 @@ export function BrowseByCategory() {
               </div>
 
               {/* Hover Border Effect */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#6B5BFF]/50 rounded-3xl transition-all duration-300" />
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/50 rounded-3xl transition-all duration-300" />
             </motion.div>
           ))}
         </div>
 
         {/* Mobile View All Button */}
         <div className="md:hidden mt-8 text-center">
-          <button className="inline-flex items-center gap-2 text-[#6B5BFF] hover:gap-3 transition-all duration-300">
+          <button className="inline-flex items-center gap-2 text-white hover:gap-3 transition-all duration-300">
             View All
             <ArrowRight className="w-5 h-5" />
           </button>

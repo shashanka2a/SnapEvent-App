@@ -13,8 +13,8 @@ export function CTASection() {
     <section className="py-32 relative overflow-hidden bg-[#0A0A0F]">
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-gradient-to-r from-[#FF7EB3] to-[#6B5BFF] rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-gradient-to-r from-gray-600 to-gray-800 rounded-full blur-3xl animate-pulse-glow" />
+        <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-gradient-to-r from-gray-800 to-gray-600 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
       </div>
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
@@ -34,7 +34,7 @@ export function CTASection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button className="px-10 py-7 bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] text-white hover:opacity-90 rounded-2xl shadow-2xl group">
+            <Button className="px-10 py-7 bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 rounded-2xl shadow-2xl group">
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>
