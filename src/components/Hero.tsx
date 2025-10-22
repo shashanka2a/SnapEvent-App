@@ -34,7 +34,7 @@ export function Hero() {
           className="max-w-5xl mx-auto text-center"
         >
           {/* Headline */}
-          <h1 className="text-white mb-6">
+          <h1 className="text-white mb-6 text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Capture Life's Best Moments with{' '}
                 <span className="text-white relative">
                   SnapEvent
