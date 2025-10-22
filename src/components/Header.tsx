@@ -21,7 +21,10 @@ export function Header() {
               <circle cx="12" cy="12" r="2.5" fill="#666666"/>
               <circle cx="12" cy="12" r="1.5" fill="black"/>
             </svg>
-            <span className="text-white underline">SnapEvent</span>
+                <span className="text-white relative">
+                  SnapEvent
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
+                </span>
           </div>
 
           {/* Navigation */}

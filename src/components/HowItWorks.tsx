@@ -45,7 +45,10 @@ export function HowItWorks() {
         >
           <h2 className="text-white mb-4">How It Works</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Getting started with <span className="text-white underline">SnapEvent</span> is simple. Follow these three easy steps to find and book your perfect photographer.
+            Getting started with <span className="text-white relative">
+              SnapEvent
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
+            </span> is simple. Follow these three easy steps to find and book your perfect photographer.
           </p>
         </motion.div>
 

@@ -39,7 +39,10 @@ export function Footer() {
                 <circle cx="12" cy="12" r="2.5" fill="#666666"/>
                 <circle cx="12" cy="12" r="1.5" fill="black"/>
               </svg>
-              <span className="text-white underline">SnapEvent</span>
+                  <span className="text-white relative">
+                    SnapEvent
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
+                  </span>
             </div>
             <p className="text-gray-400 mb-6">
               Connecting clients with professional photographers worldwide.
@@ -117,7 +120,10 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-center md:text-left">
-            © 2025 <span className="text-white underline">SnapEvent</span>. All rights reserved.
+                © 2025 <span className="text-white relative">
+                  SnapEvent
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
+                </span>. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a

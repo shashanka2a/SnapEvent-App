@@ -128,7 +128,12 @@ export function PhotographerOnboarding() {
               className="text-center"
             >
               <Camera className="w-16 h-16 text-white mx-auto mb-6" />
-              <h1 className="text-white mb-4"><span className="underline">SnapEvent</span> – Photographer Onboarding</h1>
+              <h1 className="text-white mb-4">
+                <span className="text-white relative">
+                  SnapEvent
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
+                </span> – Photographer Onboarding
+              </h1>
               <p className="text-xl text-gray-300 mb-8">
                 SnapEvent is a new platform to help photographers get more visibility, clients, and bookings.
               </p>
@@ -462,7 +467,10 @@ export function PhotographerOnboarding() {
               </div>
               <h2 className="text-white mb-4">Thank you! 🎉</h2>
               <p className="text-gray-300 mb-4">
-                Our team will review your details and create your <span className="text-white underline">SnapEvent</span> profile soon.
+                Our team will review your details and create your <span className="text-white relative">
+                  SnapEvent
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
+                </span> profile soon.
               </p>
               <p className="text-gray-300 mb-2">
                 Stay tuned – we'll share your portfolio link on WhatsApp.
