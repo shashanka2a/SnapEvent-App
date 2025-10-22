@@ -9,8 +9,8 @@
   <circle cx="12" cy="12" r="4" fill="white"/>
   
   <!-- Lens middle ring -->
-  <circle cx="12" cy="12" r="2.5" fill="#9CA3AF"/>
+  <circle cx="12" cy="12" r="2.5" fill="#666666"/>
   
   <!-- Lens inner circle -->
-  <circle cx="12" cy="12" r="1.5" fill="#374151"/>
+  <circle cx="12" cy="12" r="1.5" fill="black"/>
 </svg>

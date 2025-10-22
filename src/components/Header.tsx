@@ -14,12 +14,12 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <svg className="w-6 h-6 text-[#6B5BFF]" viewBox="0 0 24 24" fill="none">
-              <rect x="4" y="6" width="16" height="12" rx="2" fill="currentColor"/>
-              <rect x="2" y="8" width="3" height="1" rx="0.5" fill="currentColor"/>
-              <circle cx="12" cy="12" r="4" fill="currentColor"/>
-              <circle cx="12" cy="12" r="2.5" fill="#9CA3AF"/>
-              <circle cx="12" cy="12" r="1.5" fill="#374151"/>
+            <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="6" width="16" height="12" rx="2" fill="white"/>
+              <rect x="2" y="8" width="3" height="1" rx="0.5" fill="white"/>
+              <circle cx="12" cy="12" r="4" fill="white"/>
+              <circle cx="12" cy="12" r="2.5" fill="#666666"/>
+              <circle cx="12" cy="12" r="1.5" fill="black"/>
             </svg>
             <span className="text-white">SnapEvent</span>
           </div>
@@ -42,7 +42,7 @@ export function Header() {
             <Button variant="ghost" className="text-white hover:text-white hover:bg-white/10">
               Sign In
             </Button>
-            <Button className="bg-[#6B5BFF] hover:bg-[#5A4AE5] transition-colors">
+            <Button className="bg-white text-black hover:bg-gray-200 transition-colors">
               Get Started
             </Button>
           </div>

@@ -32,12 +32,12 @@ export function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <svg className="w-6 h-6 text-[#6B5BFF]" viewBox="0 0 24 24" fill="none">
-                <rect x="4" y="6" width="16" height="12" rx="2" fill="currentColor"/>
-                <rect x="2" y="8" width="3" height="1" rx="0.5" fill="currentColor"/>
-                <circle cx="12" cy="12" r="4" fill="currentColor"/>
-                <circle cx="12" cy="12" r="2.5" fill="#9CA3AF"/>
-                <circle cx="12" cy="12" r="1.5" fill="#374151"/>
+              <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="6" width="16" height="12" rx="2" fill="white"/>
+                <rect x="2" y="8" width="3" height="1" rx="0.5" fill="white"/>
+                <circle cx="12" cy="12" r="4" fill="white"/>
+                <circle cx="12" cy="12" r="2.5" fill="#666666"/>
+                <circle cx="12" cy="12" r="1.5" fill="black"/>
               </svg>
               <span className="text-white">SnapEvent</span>
             </div>
@@ -53,9 +53,9 @@ export function Footer() {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-10 h-10 bg-white/5 hover:bg-[#6B5BFF]/10 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                    className="w-10 h-10 bg-white/5 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                   >
-                    <Icon className="w-5 h-5 text-gray-400 group-hover:text-[#6B5BFF] transition-colors duration-300" />
+                    <Icon className="w-5 h-5 text-gray-400 group-hover:text-white transition-colors duration-300" />
                   </a>
                 );
               })}
@@ -70,7 +70,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-[#6B5BFF] transition-colors duration-300"
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {link}
                   </a>
@@ -87,7 +87,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-[#6B5BFF] transition-colors duration-300"
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {link}
                   </a>
@@ -104,7 +104,7 @@ export function Footer() {
                 <li key={index}>
                   <a
                     href="#"
-                    className="text-gray-400 hover:text-[#6B5BFF] transition-colors duration-300"
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {link}
                   </a>
