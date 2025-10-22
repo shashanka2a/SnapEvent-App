@@ -28,7 +28,7 @@ export function CTASection() {
             Ready to capture your special moments?
           </h2>
           <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-            Join thousands of satisfied clients who found their perfect photographer on SnapEvent
+            Join thousands of satisfied clients who found their perfect photographer on <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">SnapEvent</span>
           </p>
           <motion.div
             whileHover={{ scale: 1.05 }}

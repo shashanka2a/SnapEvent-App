@@ -39,7 +39,7 @@ export function Footer() {
                 <circle cx="12" cy="12" r="2.5" fill="#666666"/>
                 <circle cx="12" cy="12" r="1.5" fill="black"/>
               </svg>
-              <span className="text-white">SnapEvent</span>
+              <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">SnapEvent</span>
             </div>
             <p className="text-gray-400 mb-6">
               Connecting clients with professional photographers worldwide.
@@ -117,24 +117,24 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-center md:text-left">
-            © 2025 SnapEvent. All rights reserved.
+            © 2025 <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">SnapEvent</span>. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
               href="#"
-              className="text-gray-400 hover:text-[#6B5BFF] transition-colors duration-300"
+              className="text-gray-400 hover:text-white transition-colors duration-300"
             >
               Terms of Service
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-[#6B5BFF] transition-colors duration-300"
+              className="text-gray-400 hover:text-white transition-colors duration-300"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-[#6B5BFF] transition-colors duration-300"
+              className="text-gray-400 hover:text-white transition-colors duration-300"
             >
               Cookie Policy
             </a>
