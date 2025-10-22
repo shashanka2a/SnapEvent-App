@@ -31,14 +31,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none">
-                <rect x="4" y="6" width="16" height="12" rx="2" fill="white"/>
-                <rect x="2" y="8" width="3" height="1" rx="0.5" fill="white"/>
-                <circle cx="12" cy="12" r="4" fill="white"/>
-                <circle cx="12" cy="12" r="2.5" fill="#666666"/>
-                <circle cx="12" cy="12" r="1.5" fill="black"/>
-              </svg>
+                <div className="flex items-center gap-2 mb-4">
+                  <img src="/favicon.svg" alt="SnapEvent" className="w-8 h-8" />
                   <span className="text-white relative">
                     SnapEvent
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-white to-gray-300"></span>
