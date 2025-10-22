@@ -82,7 +82,7 @@ export function Hero() {
               </div>
 
               {/* CTA Button */}
-              <Button className="px-8 py-6 bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 transition-opacity rounded-2xl shadow-lg font-semibold">
+              <Button className="px-8 py-6 bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 transition-opacity rounded-2xl shadow-lg font-semibold border-2 border-white/20 hover:border-white/40 transition-all duration-300">
                 Find Photographers
               </Button>
             </div>

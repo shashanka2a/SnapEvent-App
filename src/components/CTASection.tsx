@@ -34,7 +34,7 @@ export function CTASection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button className="px-10 py-7 bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 rounded-2xl shadow-2xl group font-semibold">
+            <Button className="px-10 py-7 bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 rounded-2xl shadow-2xl group font-semibold border-2 border-white/20 hover:border-white/40 transition-all duration-300">
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Button>

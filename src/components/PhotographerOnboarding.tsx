@@ -134,7 +134,7 @@ export function PhotographerOnboarding() {
               </p>
               <Button
                 onClick={nextStep}
-                className="bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 px-8 py-6 rounded-2xl font-semibold"
+                className="bg-gradient-to-r from-gray-600 to-gray-800 text-white hover:opacity-90 px-8 py-6 rounded-2xl font-semibold border-2 border-white/20 hover:border-white/40 transition-all duration-300"
               >
                 Get Started
                 <ChevronRight className="ml-2 w-5 h-5" />
