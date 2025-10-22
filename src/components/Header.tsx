@@ -21,7 +21,7 @@ export function Header() {
               <circle cx="12" cy="12" r="2.5" fill="#666666"/>
               <circle cx="12" cy="12" r="1.5" fill="black"/>
             </svg>
-            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">SnapEvent</span>
+            <span className="text-white underline">SnapEvent</span>
           </div>
 
           {/* Navigation */}
