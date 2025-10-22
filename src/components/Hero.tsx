@@ -36,7 +36,7 @@ export function Hero() {
           {/* Headline */}
           <h1 className="text-white mb-6">
             Capture Life's Best Moments with{' '}
-            <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <span className="text-white underline">
               SnapEvent
             </span>
           </h1>
