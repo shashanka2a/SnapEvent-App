@@ -42,7 +42,7 @@ export function Header() {
             <Button variant="ghost" className="text-white hover:text-white hover:bg-white/10">
               Sign In
             </Button>
-            <Button className="bg-gradient-to-r from-[#6B5BFF] to-[#FF7EB3] hover:opacity-90 transition-opacity">
+            <Button className="bg-[#6B5BFF] hover:bg-[#5A4AE5] transition-colors">
               Get Started
             </Button>
           </div>
